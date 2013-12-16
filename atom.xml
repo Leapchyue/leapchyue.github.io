@@ -4,7 +4,7 @@
   <subtitle><![CDATA[加油！跨过去！]]></subtitle>
   <link href="http://chenyue.me/atom.xml" rel="self"/>
   <link href="http://chenyue.me"/>
-  <updated>2013-12-16T15:55:15.710Z</updated>
+  <updated>2013-12-16T15:58:51.939Z</updated>
   <id>http://chenyue.me/</id>
   <author>
     <name><![CDATA[York Chen]]></name>
@@ -16,7 +16,7 @@
     <link href="http://chenyue.me/2013/12/16/hexo-my-blog/"/>
     <id>http://chenyue.me/2013/12/16/hexo-my-blog/</id>
     <published>2013-12-16T07:12:18.000Z</published>
-    <updated>2013-12-16T15:54:18.000Z</updated>
+    <updated>2013-12-16T15:58:39.000Z</updated>
     <content type="html"><![CDATA[<p>昨天折腾了不少时间，终于搭好博客了。<br>搭博客，域名，还有改了一些自己的配置，看了很多介绍也学到很多。</p>
 <h1>配置环境</h1>
 <p>环境是 windows 7</p>
@@ -186,8 +186,25 @@
 <p>addthis登录后可以设置及修改样式，像下面那样，跟这个主题还算比较搭。</p>
 <p>disqus看起来也是挺不错的，哈！</p>
 <h2>其他配置</h2>
-<p>关于Hexo自动把可以在<code>.md</code>文件转成<code>.html</code>这个问题，可以在README.md</p>
-<p>添加favicon.png到.deploy</p>
+<p>关于Hexo自动把可以在<code>.md</code>文件转成<code>.html</code>这个问题，delpoy前将README.md和favicon.png拷贝到public文件夹，这样就会使用dexo部署到github的时候也会拷贝上去，可以写个代码自动拷贝和deploy。</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="code"><pre><span class="shebang">#!/bin/sh</span>
+
+<span class="keyword">echo</span> <span class="string">'cp favicon.png public/favicon.png'</span>
+cp favicon.png public/favicon.png
+<span class="keyword">echo</span> <span class="string">'cp README.md public/README.md'</span>
+cp README.md public/README.md
+<span class="keyword">echo</span> <span class="string">'hexo deploy'</span>
+hexo deploy
+</pre></td></tr></table></figure>
+
 <h2>关于域名</h2>
 <p><code>chenyue.me</code>原先域名是在<a href="https://www.godaddy.com/" target="_blank">Godaddy</a>注册的，把它转到<a href="www.urlspot.com">URLspot</a>一个代理商，然后通过购买其他产品是的组合的价格降低，最后差不多￥43就可以了。之后也还可以在继续一年一年那样续。</p>
 <p>后来查了下才知道原来国内一般都用<a href="https://www.dnspod.cn/Domain" target="_blank">DNSpod</a>，所以解析服务转过来。<br>也学习了一些其他关于域名知识。</p>
