@@ -4,7 +4,7 @@
   <subtitle><![CDATA[加油！跨过去！]]></subtitle>
   <link href="http://chenyue.me/atom.xml" rel="self"/>
   <link href="http://chenyue.me"/>
-  <updated>2013-12-16T15:47:58.906Z</updated>
+  <updated>2013-12-16T15:55:15.710Z</updated>
   <id>http://chenyue.me/</id>
   <author>
     <name><![CDATA[York Chen]]></name>
@@ -16,7 +16,7 @@
     <link href="http://chenyue.me/2013/12/16/hexo-my-blog/"/>
     <id>http://chenyue.me/2013/12/16/hexo-my-blog/</id>
     <published>2013-12-16T07:12:18.000Z</published>
-    <updated>2013-12-16T15:45:27.000Z</updated>
+    <updated>2013-12-16T15:54:18.000Z</updated>
     <content type="html"><![CDATA[<p>昨天折腾了不少时间，终于搭好博客了。<br>搭博客，域名，还有改了一些自己的配置，看了很多介绍也学到很多。</p>
 <h1>配置环境</h1>
 <p>环境是 windows 7</p>
@@ -203,11 +203,11 @@
     <category scheme="http://chenyue.me/tags/Hexo/" term="Hexo"/>
   </entry>
   <entry>
-    <title type="html"><![CDATA[新的起点]]></title>
+    <title type="html"><![CDATA[新的博客]]></title>
     <link href="http://chenyue.me/2013/12/14/new-start/"/>
     <id>http://chenyue.me/2013/12/14/new-start/</id>
     <published>2013-12-14T13:35:21.000Z</published>
-    <updated>2013-12-16T11:28:20.000Z</updated>
+    <updated>2013-12-16T15:54:50.000Z</updated>
     <content type="html"><![CDATA[<blockquote>
 <p><strong>《暗时间》</strong><br>每个人的生命就像沙漏，里面装的沙子总量大致相当，不同的是，有的沙漏颈部较细，有的沙漏颈部较粗。颈部较细的沙漏能够抓住每一粒时间之沙，即使沙子总量一样，也能拥有更长的生命。  </p>
 </blockquote>
