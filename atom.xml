@@ -4,7 +4,7 @@
   <subtitle><![CDATA[加油！跨过去！]]></subtitle>
   <link href="http://chenyue.me/atom.xml" rel="self"/>
   <link href="http://chenyue.me"/>
-  <updated>2013-12-15T14:57:47.317Z</updated>
+  <updated>2013-12-16T13:33:23.610Z</updated>
   <id>http://chenyue.me/</id>
   <author>
     <name><![CDATA[York Chen]]></name>
@@ -12,23 +12,82 @@
   </author>
   <generator uri="http://zespia.tw/hexo">Hexo</generator>
   <entry>
+    <title type="html"><![CDATA[用Hexo搭博客啦]]></title>
+    <link href="http://chenyue.me/2013/12/16/hexo-my-blog/"/>
+    <id>http://chenyue.me/2013/12/16/hexo-my-blog/</id>
+    <published>2013-12-16T07:12:18.000Z</published>
+    <updated>2013-12-16T13:32:59.000Z</updated>
+    <content type="html"><![CDATA[<p>昨天折腾了不少时间，终于搭好博客了。</p>
+<h1>配置环境</h1>
+<p>环境是 windows 7</p>
+<h2>安装 git 和配置 github</h2>
+<p>按照github上面的指南<a href="https://help.github.com/articles/set-up-git" target="_blank">安装git</a>和<a href="https://help.github.com/articles/generating-ssh-keys" target="_blank">生成ssh-key</a>直接做就好了。</p>
+<h2>安装 Node.js 和 Hexo</h2>
+<p>安装 Node.js ，到<a href="http://nodejs.org/" target="_blank">Node.js官网</a>下载直接安装就好。</p>
+<p>接下来就是在 Node.js 中安装 Hexo ，打开git的Git Bash输入这个命令。</p>
+<figure class="highlight lang-shell"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre><span class="title">npm</span> install -g hexo
+</pre></td></tr></table></figure>
+
+<h1>Hexo 初始化与配置</h1>
+<h2>初始化</h2>
+<p>新建一个目录myBlog，在里面初始化Hexo。</p>
+<figure class="highlight lang-shell"><table><tr><td class="gutter"><pre>1
+2
+3
+</pre></td><td class="code"><pre><span class="title">mkdir</span> myBlog
+<span class="title">cd</span> myBlog
+<span class="title">hexo</span> init
+</pre></td></tr></table></figure>
+
+<h2>生成静态站点</h2>
+<p>在myBlog目录下执行下面的命令，生成静态站点。</p>
+<figure class="highlight lang-shell"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre><span class="title">hexo</span> generate 或者 hexo g
+</pre></td></tr></table></figure>
+
+<h2>本地启动浏览</h2>
+<p>在本地启动网站服务，浏览博客。打开浏览器输入<code>localhost:4000</code>就可以浏览网站了。</p>
+<figure class="highlight lang-shell"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre><span class="title">hexo</span> server 或者 hexo s
+</pre></td></tr></table></figure>
+
+<h2>填写 Hexo 配置</h2>
+<p>查看Hexo的<a href="http://zespia.tw/hexo/docs/configuration.html" target="_blank">配置说明</a>，填写myBlog目录下的<code>_config.yml</code>文件，就把需要的信息填写上去就可以，基本上也不用修改什么拉。</p>
+<h2>填写主题配置</h2>
+<p>填写主题的配置文件，在<code>\myBlog\themes\light\</code>的<code>_config.yml</code>，查看<a href="https://github.com/tommy351/hexo-theme-light" target="_blank">配置文件</a>，基本上也按照默认配置就好。</p>
+<h1>进一步进行配置</h1>
+<h2>添加RSS和sitemap</h2>
+<p>在<code>myBlog</code>目录下，添加生成RSS和sitemap的插件</p>
+<figure class="highlight lang-shell"><table><tr><td class="gutter"><pre>1
+2
+</pre></td><td class="code"><pre><span class="title">npm</span> install hexo-generator-feed
+<span class="title">npm</span> install hexo-generator-sitemap
+</pre></td></tr></table></figure>
+
+<p><img src="/img/my_disqus_style.png" alt="修改后的disqus风格"></p>
+<h2>#</h2>
+]]></content>
+    <category scheme="http://chenyue.me/tags/Hexo/" term="Hexo"/>
+  </entry>
+  <entry>
     <title type="html"><![CDATA[新的起点]]></title>
-    <link href="http://chenyue.me/2013/12/14/New_Start/"/>
-    <id>http://chenyue.me/2013/12/14/New_Start/</id>
+    <link href="http://chenyue.me/2013/12/14/new-start/"/>
+    <id>http://chenyue.me/2013/12/14/new-start/</id>
     <published>2013-12-14T13:35:21.000Z</published>
-    <updated>2013-12-15T14:44:35.000Z</updated>
+    <updated>2013-12-16T11:28:20.000Z</updated>
     <content type="html"><![CDATA[<blockquote>
-<p><strong>《暗时间》</strong><br>每个人的生命就像沙漏，里面装的沙子总量大致相当，不同的是，有的沙漏颈部较细，有的沙漏颈部较粗。颈部较细的沙漏能够抓住每一粒时间之沙，即使沙子总量一样，也能拥有更长的生命 。</p>
+<p><strong>《暗时间》</strong><br>每个人的生命就像沙漏，里面装的沙子总量大致相当，不同的是，有的沙漏颈部较细，有的沙漏颈部较粗。颈部较细的沙漏能够抓住每一粒时间之沙，即使沙子总量一样，也能拥有更长的生命。  </p>
 </blockquote>
 <hr>
 <p>就如同<a href="http://book.douban.com/subject/6709809/" target="_blank">《暗时间》</a>的开卷所言，每个人的生命像沙漏，怎样才能让自己的沙漏颈部细点呢？书中给了我们答案<strong>多思考</strong>，整本书都在告诉我们关于思考的种种，读后深有体会，生活就得多思考，让时间慢慢流走，多思考问题，思考生活，思考人生书。</p>
 <p>书中有这么这一章<a href="http://mindhacks.cn/2009/02/15/why-you-should-start-blogging-now/" target="_blank">为什么你应该（从现在开始就）写博客</a>。第一次看到这个觉得很有道理，有种灵光一闪，就很冲动了想自己弄个博客，但是那时候在火车上。然后就不了了之了。囧</p>
 <a id="more"></a>
 
-<p>一直以来都只是在Qzone上写写日志，记录生活点滴，发下牢骚而已。后来发现很多人都有自己的域名博客，很酷。觉得WordPress很不错，但自从部署了实验室的博客后觉得这个东西还是比较麻烦，囧，懒人就是这样。不过后来是突然间发现blogger这个博客系统，不知道当时怎么想的就在上面写博客，到现在总共写了有15篇，现在看看第一篇<a href="http://leapchyue.blogspot.com/2012/02/blog-post.html" target="_blank">小跃仔开始写博客</a>心情跟现在一模一样，囧，以后是不是这样就停止写了呢，这个留待后面观察。</p>
-<p>去年看到github也可以搭博客，但发现git那个东西很烦也没有去折腾了。今年年初发现chenyue.me这个域名可以注册，就傻傻去注册了，又不想自己去买空间去搞，就绑定到blogger上的<a href="blog.chenyue.me">博客</a>，现在改成域名的子域blog上面，但blogger访问不怎么顺畅，这个你懂的。第一个真正意义上的博客就这样。</p>
-<p>在今年暑假的时候看到一个<a href="http://www.dandyweng.com/" target="_blank">很漂亮的博客</a>，萌发了想学习前端框架bootstrap的想法，但是不了了之，前几天又突然萌发出来了。前几天在用latex写东西的时候，不知道查什么的发现了markdown这种神奇的编辑方法，可以很方便的记录笔记，包括公式、又有代码高亮什么的。后来才发现原来github上的.md文件就是markdown，囧，以前肿么没注意到。之后便开始看下要用哪种生成静态博客的方式，看到一个博客的一篇更新介绍他换成了Hexo，之前他也用过其他的一些，但是最后换到了这个，再看发现部署什么的简单，很符合自己的胃口，而且定制什么都很简单，爽爆了，就用这个吧。</p>
-<p>当然还有一点就是就是这周发现邮箱里面有不少dodaddy的邮件，囧，域名快过期了，得续费。寻找最省钱的续.me域名的方法，.me不像.com那样有优惠，后来发现可以大概43可以续一年，发神经一下子续了3年。额，这样就得找时间重新整理下博客了，不然就浪费了钱。</p>
+<p>一直以来都只是在<code>Qzone</code>上写写日志，记录生活点滴，发下牢骚而已。后来发现很多人都有自己的域名博客，很酷。觉得<code>WordPress</code>很不错，但自从部署了实验室的博客后觉得这个东西还是比较麻烦，囧，懒人就是这样。不过后来是突然间发现<code>blogger</code>这个博客系统，不知道当时怎么想的就在上面写博客，到现在总共写了有15篇，现在看看第一篇<a href="http://leapchyue.blogspot.com/2012/02/blog-post.html" target="_blank">小跃仔开始写博客</a>心情跟现在一模一样，囧，以后是不是这样就停止写了呢，这个留待后面观察。</p>
+<p>去年看到<code>github</code>也可以搭博客，但发现git那个东西很烦也没有去折腾了。今年年初发现chenyue.me这个域名可以注册，就傻傻去注册了，又不想自己去买空间去搞，就绑定到blogger上的<a href="blog.chenyue.me">博客</a>，现在改成域名的子域blog上面，但blogger访问不怎么顺畅，这个你懂的。第一个真正意义上的博客就这样。</p>
+<p>在今年暑假的时候看到一个<a href="http://www.dandyweng.com/" target="_blank">很漂亮的博客</a>，萌发了想学习前端框架<a href="http://getbootstrap.com/" target="_blank"><code>bootstrap</code></a>的想法，但是不了了之，前几天又突然萌发出来了。前几天在用<code>latex</code>写东西的时候，不知道查什么的发现了<code>markdown</code>这种神奇的编辑方法，可以很方便的记录笔记，包括公式、又有代码高亮什么的。后来才发现原来github上的.md文件就是markdown，囧，以前肿么没注意到。之后便开始看下要用哪种生成静态博客的方式，看到一个博客的一篇更新介绍他换成了<code>Hexo</code>，之前他也用过其他的一些，但是最后换到了这个，再看发现部署什么的简单，很符合自己的胃口，而且定制什么都很简单，爽爆了，就用这个吧。</p>
+<p>当然还有一点就是就是这周发现邮箱里面有不少dodaddy的邮件，囧，域名快过期了，得续费。寻找最省钱的续域名的方法，<code>.me</code>不像<code>.com</code>那样经常有优惠可以弄到很便宜，后来发现有方法可以弄到大概￥43续一年，发神经一下子续了3年。额，这样就得找时间重新整理下博客了，不然就浪费了钱。</p>
 <p>准备在这个博客上记录下自己的总结，然后多思考，如序言所写，主要要记录以下栏目内容</p>
 <ul>
 <li>备忘 记录遇到的问题和解法</li>
