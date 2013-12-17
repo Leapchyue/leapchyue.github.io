@@ -4,7 +4,7 @@
   <subtitle><![CDATA[加油！跨过去！]]></subtitle>
   <link href="http://chenyue.me/atom.xml" rel="self"/>
   <link href="http://chenyue.me"/>
-  <updated>2013-12-16T15:58:51.939Z</updated>
+  <updated>2013-12-17T15:05:33.429Z</updated>
   <id>http://chenyue.me/</id>
   <author>
     <name><![CDATA[York Chen]]></name>
@@ -12,11 +12,378 @@
   </author>
   <generator uri="http://zespia.tw/hexo">Hexo</generator>
   <entry>
+    <title type="html"><![CDATA[Sublime的使用和技巧]]></title>
+    <link href="http://chenyue.me/2013/12/17/using-sublime3-as-my-editer/"/>
+    <id>http://chenyue.me/2013/12/17/using-sublime3-as-my-editer/</id>
+    <published>2013-12-17T06:13:16.000Z</published>
+    <updated>2013-12-17T14:57:55.000Z</updated>
+    <content type="html"><![CDATA[<p>在发现<a href="http://www.sublimetext.com/" target="_blank">sublime</a>之前，编辑器使用<a href="http://notepad-plus-plus.org/" target="_blank">notepad++</a>，发现sublime这神器以后就一直用sublime做为编辑器了，使用多光标操作爽爆了。唯一不是很爽的就是不能像notpad++那样可视化显示换行符。不过后来发现它有插件可以基本实现这个功能。</p>
+<p>个人觉得它比较赞的功能有：</p>
+<ul>
+<li>多光标</li>
+<li>Snippets</li>
+<li>方便的查找</li>
+<li>各种可视化，对比vim之类神器</li>
+<li>非常方便支持插件</li>
+<li>……</li>
+</ul>
+<a id="more"></a>
+
+<h1>安装与功能浏览</h1>
+<p>安装环境windows 7 。</p>
+<p>到sublime官网下载安装就可以，现在有两个版本，<a href="http://www.sublimetext.com/2" target="_blank">2.0.2</a>和<a href="http://www.sublimetext.com/3" target="_blank">3047</a>，区别不是很清楚，囧。有免费版也有付费版，付费版需要USD70，超级贵，免费版功能上跟付费版没什么区别，无限制时间使用，但是在保存时偶尔会弹出一个购买的对话框，基本不影响使用。</p>
+<p>安装后打开，你就会喜欢上的，基本上使用默认的配置就ok，我这人就是这样基本使用默认，囧。</p>
+<p>在安装后，一般都会查看下这个软件到底有啥功能，这个从上面的菜单栏，一项一项的往下看就可以了解这个软件的功能了，装完软件都会象征性的浏览下，了解个大概，后面需要用的时候才知道在哪。</p>
+<ul>
+<li><p>Edit，跟编辑相关的一些设置，大小写，tag，mark，code folding等操作<br>Sort Lines，按行排序</p>
+</li>
+<li><p>View，视图，代码高亮，换行符类型编码格式和tab设置等<br>Minimap，右边的边栏，现在文件的缩略图，可以对文件进行一个粗定位，一开始被吸引的原因<br>Side Bar，这个就是左边的一个边栏，在打开比较多文件的时候很用<br>Console，控制台，可以看下sublime的执行情况</p>
+</li>
+<li><p>Tool，工具，有强大的工具，snippets，macro（宏）等<br>Ctrl   Palette，查看功能，很强大很方便<br>Snippets，代码片段库，可以自己添加，很方便插入</p>
+</li>
+<li><p>Preferces，配置，配置文件是json格式</p>
+</li>
+</ul>
+<h1>快捷键</h1>
+<p>使用快捷键可以免去操作鼠标，加快码力。 快捷键的设置在<code>Preferences</code>下的<code>key Bindings - Defalt</code>，这个文件不可编辑，可以用来查看快捷键的内容，<code>key Bindings - User</code>为设置个人的快捷键。一般设置快捷键前在defalt里面查找后，再user里面添加更改。</p>
+<p>不知道功能的快捷键还可以在菜单栏找，一般菜单后面有写快捷键。</p>
+<p>常用的快捷键很多都跟一般的快捷键一样，像<code>Ctrl + C</code>，<code>Ctrl + V</code>等，这些功能都一样。下面介绍一些常用的快捷键。</p>
+<h2>关于标签页的快捷键</h2>
+<p>这个最常用了。</p>
+<table>
+<thead>
+<tr>
+<th>常用快捷键</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Ctrl + W</em></td>
+<td>关闭当前标签页</td>
+</tr>
+<tr>
+<td>Ctrl + N</td>
+<td>新建标签页</td>
+</tr>
+<tr>
+<td>Ctrl + Tab</td>
+<td>切换标签页</td>
+</tr>
+</tbody>
+</table>
+<h2>跟编辑相关的快捷键</h2>
+<p>主要是方便复制粘帖等等，不用这些的话有时候操作就会多一些</p>
+<table>
+<thead>
+<tr>
+<th>常用快捷键</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tab</td>
+<td>缩进</td>
+</tr>
+<tr>
+<td>Shift+Tab</td>
+<td>去除缩进</td>
+</tr>
+<tr>
+<td>Ctrl + K Ctrl + V</td>
+<td><em>从历史粘贴</em>，有些时候很方便，不用每次复制粘帖</td>
+</tr>
+<tr>
+<td><em>Ctrl + X</em></td>
+<td>删除当前行</td>
+</tr>
+<tr>
+<td>Ctrl + Shift + K</td>
+<td>删除当前行</td>
+</tr>
+<tr>
+<td>Ctrl + Shift + D</td>
+<td>复制当前所在整行</td>
+</tr>
+<tr>
+<td>Ctrl + K + K</td>
+<td>从光标处删除至行尾 一般是按住Shift+Home/End再加delete</td>
+</tr>
+<tr>
+<td>Ctrl + K + Backspace</td>
+<td>从光标处删除至行首</td>
+</tr>
+<tr>
+<td><em>Ctrl + J</em></td>
+<td>删除当前行的换行符，如选择多行会把多行合成一行后再删除换行符</td>
+</tr>
+<tr>
+<td>Ctrl + Enter</td>
+<td>插入行后</td>
+</tr>
+<tr>
+<td>Ctrl + Shift + Enter</td>
+<td>插入行前</td>
+</tr>
+<tr>
+<td>Ctrl + Shift + UP</td>
+<td>与上行互换</td>
+</tr>
+<tr>
+<td>Ctrl + Shift + DOWN</td>
+<td>与下行互换</td>
+</tr>
+<tr>
+<td>Ctrl + K + U</td>
+<td>改为大写</td>
+</tr>
+<tr>
+<td>Ctrl + K + L</td>
+<td>改为小写</td>
+</tr>
+<tr>
+<td>Ctrl + Y</td>
+<td>恢复撤销</td>
+</tr>
+<tr>
+<td>Ctrl + Z</td>
+<td>撤销操作</td>
+</tr>
+<tr>
+<td>Ctrl + U</td>
+<td>软撤销，只是撤销光标位置</td>
+</tr>
+</tbody>
+</table>
+<h2>选择，多光标操作快捷键</h2>
+<p>选择，多光标还有一些普遍适合的快捷键，如，按入Shift+方向键/Home/End等等。</p>
+<table>
+<thead>
+<tr>
+<th>常用快捷键</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ctrl + Shift + M</td>
+<td>选择括号内的内容</td>
+</tr>
+<tr>
+<td>Ctrl + L</td>
+<td>选择整行(按住-继续选择下行)</td>
+</tr>
+<tr>
+<td>Ctrl + 鼠标左键</td>
+<td>出现多光标，可以多光标操作</td>
+</tr>
+<tr>
+<td>Shift + 鼠标右键</td>
+<td>竖向多行插入光标</td>
+</tr>
+<tr>
+<td>按住鼠标中键</td>
+<td>竖向多行插入光标</td>
+</tr>
+<tr>
+<td>Ctrl + D</td>
+<td>选中光标所在的‘单词’，连续操作则会多选中下一个相同的单词</td>
+</tr>
+<tr>
+<td><em>Alt + F3</em></td>
+<td>全选文本中当前选中的内容</td>
+</tr>
+<tr>
+<td>Ctrl + M</td>
+<td>光标移动至括号内结束或开始的位置</td>
+</tr>
+</tbody>
+</table>
+<h1>写代码经常用到的快捷键</h1>
+<p>有注释，折叠，格式化等操作</p>
+<table>
+<thead>
+<tr>
+<th>常用快捷键</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Ctrl + /</em></td>
+<td>注释整行</td>
+</tr>
+<tr>
+<td>Ctrl + Shift + /</td>
+<td>注释已选择内容</td>
+</tr>
+<tr>
+<td>Ctrl + Shift + [</td>
+<td>折叠代码</td>
+</tr>
+<tr>
+<td>Ctrl + Shift + ]</td>
+<td>展开代码</td>
+</tr>
+<tr>
+<td>Ctrl + K + 0</td>
+<td>展开所有</td>
+</tr>
+<tr>
+<td>Ctrl + K + T</td>
+<td>折叠属性</td>
+</tr>
+<tr>
+<td>Shift + Space</td>
+<td>自动完成（本来是Ctrl + Space，与系统快捷键冲突，改成这样）</td>
+</tr>
+<tr>
+<td><em>Alt + Shift + F</em></td>
+<td>格式化命令 reindent <em>需要自己定义快捷键</em></td>
+</tr>
+<tr>
+<td>Alt + .</td>
+<td>闭合标签</td>
+</tr>
+<tr>
+<td>Ctrl + F2</td>
+<td>设置/删除标记</td>
+</tr>
+</tbody>
+</table>
+<h2>其他常用的快捷键</h2>
+<p>包括一些功能快捷键，查找，分屏等等</p>
+<table>
+<thead>
+<tr>
+<th>常用快捷键</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>F9</td>
+<td>行排序</td>
+</tr>
+<tr>
+<td>F6</td>
+<td>拼写检查</td>
+</tr>
+<tr>
+<td>F11</td>
+<td>全屏</td>
+</tr>
+<tr>
+<td>Shift + F11</td>
+<td>无打扰模式的全屏</td>
+</tr>
+<tr>
+<td>Ctrl + K + B</td>
+<td>开启/关闭侧边栏</td>
+</tr>
+<tr>
+<td>Ctrl + `</td>
+<td>打开Console界面</td>
+</tr>
+<tr>
+<td>Alt + Shift + ^[067]</td>
+<td>各种各样的分屏，每个屏为一个group</td>
+</tr>
+<tr>
+<td>Ctrl + K，Ctrl + 左右方向</td>
+<td>分屏后的换屏，其他快捷键看菜单栏</td>
+</tr>
+<tr>
+<td>Ctrl + Shift + P</td>
+<td>打开命令面板</td>
+</tr>
+<tr>
+<td>Ctrl + R</td>
+<td>快速列出/跳转到某个函数</td>
+</tr>
+<tr>
+<td>Ctrl + G</td>
+<td>跳转到相应的行</td>
+</tr>
+<tr>
+<td>Ctrl + P</td>
+<td>Goto Anything</td>
+</tr>
+</tbody>
+</table>
+<p>Ctrl + P 功能非常强大，可以实现任意跳转等等</p>
+<ul>
+<li>Ctrl + P 可以快速跳转到当前项目中的任意文件，可进行关键词匹配</li>
+<li>输入 Ctrl + P 后，输入 <code>@</code> (跟Ctrl + R功能相同)可以快速列出/跳转到某个函数，在 markdown中是跳转到标题</li>
+<li>输入 Ctrl + P 后，输入 <code>#</code> 可以在当前文件中进行搜索。</li>
+<li>输入 Ctrl + P 后，输入 <code>:</code> (或是Ctrl+G功能相同)加上数字可以跳转到相应的行</li>
+</ul>
+<p>Ctrl + Shift + P 打开命令面板<br>可以先浏览下大概有哪些命令，我比较常用它设置语言高亮类型，预览MD文件等等。</p>
+<h1>插件</h1>
+<p>Sublime 3的第一插件需要自己去安装，= =，就是安装一个用来管理插件的包<code>sublime_package_control</code>。</p>
+<h2>Package Control</h2>
+<p>安装也非常简单，有两种方法，一种是在命令台输入</p>
+<figure class="highlight lang-python"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre><span class="keyword">import</span> urllib.request,os; pf = <span class="string">'Package Control.sublime-package'</span>; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), <span class="string">'wb'</span>).write(urllib.request.urlopen( <span class="string">'http://sublime.wbond.net/'</span> + pf.replace(<span class="string">' '</span>,<span class="string">'%20'</span>)).read())
+</pre></td></tr></table></figure>
+
+<p>另外一种就是自己下载这个<a href="https://github.com/wbond/sublime_package_control" target="_blank"><code>sublime_package_control</code></a>包，解压后把解压出来的文件夹名称改为<code>Package Control</code>，点击这个文件夹进去后应该可以看到两个文件夹和若干文件，然后点击<code>Preferences &gt; Browse Packages…</code>，把刚刚的那个文件夹拷贝到这里，完成安装。<br>安装后重启Sublime 3。</p>
+<p>具体的安装过程的官方介绍在<a href="https://sublime.wbond.net/installation" target="_blank"><a href="https://sublime.wbond.net/installation">https://sublime.wbond.net/installation</a></a>。</p>
+<p>在<a href="https://sublime.wbond.net/" target="_blank"><a href="https://sublime.wbond.net/">https://sublime.wbond.net/</a></a>这个网站是官方的sublime的插件和介绍，需要的插件可以到上面查找。</p>
+<h2>插件的安装</h2>
+<p>插件可以在安装也可以离线安装，在线安装非常简单<br>首先<code>Preferences &gt; Package Control</code> 选择 <code>Package Control: Install Package</code> 或者直接快捷键<code>Ctrl + Shift + P</code>找出<code>Package Control: Install Package</code> ，然后查找需要的package名称，选择后就是安装了，安装完重启下sublime。</p>
+<p>下面将介绍下我使用的几个包</p>
+<ul>
+<li><p>Theme - Soda 主题包，听说是完美的编码主题，挺不错，其实感觉自带的已经很好了<br>安装需要自己的配置文件中更改主题。</p>
+</li>
+<li><p>Alignment 对齐包，将<code>=</code>对齐，快捷键需要自己重新设置(跟QQ截屏冲突)。</p>
+</li>
+<li><p>Encoding Helper 在状态栏显示编码类型</p>
+</li>
+<li><p>LineEndings 在状态栏现在换行符的编码类型</p>
+</li>
+<li><p>SideBarEnhancements 可以在侧边栏显示打开的文件夹，可以有强大的文件右键菜单</p>
+</li>
+<li><p>markdownediting 写markdown时高亮，感觉效果还可以</p>
+</li>
+<li>markdown Preview 浏览器预览MD文件</li>
+</ul>
+<p>还有很多其他的插件，但是还没有用到。</p>
+<h1>Snippets（代码片段）功能</h1>
+<p>这个主要是保存一些比较常用的代码片段，可以设置代码模版中需要更改的变量，在插入的时候按tab可以修改变量。<br>下面为Snippet的模版，需要在这个模板的基础上修改成自己的代码片段。具体的配置可以查看<a href="http://sublimetext.info/docs/en/extensibility/snippets.html" target="_blank">官方指南</a>。</p>
+<figure class="highlight lang-xml"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="code"><pre><span class="tag">&lt;<span class="title">snippet</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">content</span>&gt;</span><span class="cdata">&lt;![CDATA[
+    Hello, ${1:this} is a ${2:snippet}.
+]]&gt;</span><span class="tag">&lt;/<span class="title">content</span>&gt;</span>
+    <span class="comment">&lt;!-- Optional: Set a tabTrigger to define how to trigger the snippet --&gt;</span>
+    <span class="comment">&lt;!-- &lt;tabTrigger&gt;hello&lt;/tabTrigger&gt; --&gt;</span>
+    <span class="comment">&lt;!-- Optional: Set a scope to limit where the snippet will trigger --&gt;</span>
+    <span class="comment">&lt;!-- &lt;scope&gt;source.python&lt;/scope&gt; --&gt;</span>
+<span class="tag">&lt;/<span class="title">snippet</span>&gt;</span>
+</pre></td></tr></table></figure>
+
+<h1>其他技巧</h1>
+<p>建议显示状态栏，状态栏右边可以点击，有两个菜单，一个是设置tab之类的内容，另一个是设置当前的编写语言类型，设置语言类型可以用命令。</p>
+<p>C及其他语言编译与运行，这些只要能在命令行中运行，sublime就默认可以运行了，也有快捷键，很方便。</p>
+]]></content>
+    <category scheme="http://chenyue.me/tags/sublime/" term="sublime"/>
+  </entry>
+  <entry>
     <title type="html"><![CDATA[用Hexo搭博客啦]]></title>
     <link href="http://chenyue.me/2013/12/16/hexo-my-blog/"/>
     <id>http://chenyue.me/2013/12/16/hexo-my-blog/</id>
     <published>2013-12-16T07:12:18.000Z</published>
-    <updated>2013-12-16T15:58:39.000Z</updated>
+    <updated>2013-12-17T14:55:34.000Z</updated>
     <content type="html"><![CDATA[<p>昨天折腾了不少时间，终于搭好博客了。<br>搭博客，域名，还有改了一些自己的配置，看了很多介绍也学到很多。</p>
 <h1>配置环境</h1>
 <p>环境是 windows 7</p>
@@ -54,6 +421,7 @@
 </pre></td><td class="code"><pre><span class="title">hexo</span> server 或者 hexo s
 </pre></td></tr></table></figure>
 
+<p>可以把上面两个命令写到同一个脚本文件中，就不用每次敲两个命令。</p>
 <h2>填写 Hexo 配置</h2>
 <p>查看Hexo的<a href="http://zespia.tw/hexo/docs/configuration.html" target="_blank">配置说明</a>，填写myBlog目录下的<code>_config.yml</code>文件，就把需要的信息填写上去就可以，基本上也不用修改什么拉。</p>
 <h2>填写主题配置</h2>
@@ -186,7 +554,7 @@
 <p>addthis登录后可以设置及修改样式，像下面那样，跟这个主题还算比较搭。</p>
 <p>disqus看起来也是挺不错的，哈！</p>
 <h2>其他配置</h2>
-<p>关于Hexo自动把可以在<code>.md</code>文件转成<code>.html</code>这个问题，delpoy前将README.md和favicon.png拷贝到public文件夹，这样就会使用dexo部署到github的时候也会拷贝上去，可以写个代码自动拷贝和deploy。</p>
+<p>关于Hexo自动把可以在<code>.md</code>文件转成<code>.html</code>这个问题，delpoy前将<code>README.md</code>和<code>favicon.png</code>拷贝到<code>public</code>文件夹，这样再使用<code>Hexo deploy</code>部署到github的时候也会拷贝上去，可以写个代码自动拷贝和deploy。</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre>1
 2
 3
