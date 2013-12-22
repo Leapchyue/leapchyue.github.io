@@ -1,0 +1,625 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>读《程序员的数学》 | Leap</title>
+  <meta name="author" content="York Chen">
+  
+  <meta name="description" content="昨晚睡不着，只能起来看书，没得选床头只有一本《程序员的数学》，就只能看这本了。结果不一会就看完了，这本算是相当科普的书咯。话说高中的应该看完也是毫无鸭梨的。而至于什么是“程序员的数学”，我觉得这本书还谈不上，这本仅仅是入门基础而已，给人启发而已。
+书的内容讲得很有趣比较吸引人，比较好懂，有不少以前没有想过的，这本书值得瞄下。但书上大部分的内容都不用怎么思考的，大部分都是以前见过的内容或者曾经思考过的，基本不到两个小时就可以看完。昨晚也就大概2个小时看完了。不过也有不少以前没有注意到的。
+笔记
+
+0的作用：占位，统一标准，简化规则">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="读《程序员的数学》"/>
+  <meta property="og:site_name" content="Leap"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.png" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="Leap" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-46464674-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">Leap</a></h1>
+  <h2><a href="/">加油！跨过去！</a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">Home</a></li>
+    
+      <li><a href="/archives">Archives</a></li>
+    
+      <li><a href="/about">About</a></li>
+    
+      <li><a href="/atom.xml">RSS</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2013-12-21T14:44:45.000Z"><a href="/2013/12/21/programmers-math/">Dec 21 2013</a></time>
+      
+      
+  
+    <h1 class="title">读《程序员的数学》</h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>昨晚睡不着，只能起来看书，没得选床头只有一本《程序员的数学》，就只能看这本了。结果不一会就看完了，这本算是相当科普的书咯。话说高中的应该看完也是毫无鸭梨的。而至于什么是“程序员的数学”，我觉得这本书还谈不上，这本仅仅是入门基础而已，给人启发而已。</p>
+<p>书的内容讲得很有趣比较吸引人，比较好懂，有不少以前没有想过的，这本书值得瞄下。但书上大部分的内容都不用怎么思考的，大部分都是以前见过的内容或者曾经思考过的，基本不到两个小时就可以看完。昨晚也就大概2个小时看完了。不过也有不少以前没有注意到的。</p>
+<h1>笔记</h1>
+<ul>
+<li>0的作用：占位，统一标准，简化规则</li>
+</ul>
+<a id="more"></a>
+
+<ul>
+<li>蕴涵——若A则B</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>A</th>
+<th>B</th>
+<th>$ A  \Rightarrow B $</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>——-</td>
+<td>——-</td>
+<td>———————————————————</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>0  当A为真时，当且仅当B为假时，$ A  \Rightarrow B $ 才为假</td>
+</tr>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>由 A 和 B构成的所有运算的真值表</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>A</th>
+<th>0</th>
+<th>0</th>
+<th>1</th>
+<th>1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>B</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>——-</td>
+<td>——-</td>
+<td>——-</td>
+<td>——-</td>
+<td>——-</td>
+<td>————————————</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>恒为0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>$ A \wedge B $</td>
+</tr>
+<tr>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>$ A \wedge (\neg B) $</td>
+</tr>
+<tr>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>$ A $</td>
+</tr>
+<tr>
+<td>4</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>$ (\neg A) \wedge B $</td>
+</tr>
+<tr>
+<td>5</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>$ B $</td>
+</tr>
+<tr>
+<td>6</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>$ \neg(A = B) $ 即 $ A \oplus B $</td>
+</tr>
+<tr>
+<td>7</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>$ A \vee B $</td>
+</tr>
+<tr>
+<td>8</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>$ \neg(A \vee B) $</td>
+</tr>
+<tr>
+<td>9</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>$ A = B $</td>
+</tr>
+<tr>
+<td>10</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>$ \neg B $</td>
+</tr>
+<tr>
+<td>11</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>$ A \vee (\neg B) $</td>
+</tr>
+<tr>
+<td>12</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>$ \neg A $</td>
+</tr>
+<tr>
+<td>13</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>$ (\neg A) \vee B $ 即 $ A  \Rightarrow B $</td>
+</tr>
+<tr>
+<td>14</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>$ \neg (A \vee B) $</td>
+</tr>
+<tr>
+<td>15</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>恒为1</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><p>余数<br>算多少天后是星期几，包括$ x^y $ 天这种形式，注意有个<code>循环节</code>的概念，即是取余到一定程序后会循环，就如同循环小数那样有个循环节。</p>
+</li>
+<li><p>奇偶校验<br>在余数的内容中，有著名的七桥问题，还有下面这两个问题。</p>
+</li>
+</ul>
+<ul>
+<li>找人问题，已知初始时人在哪，每天随机移动到一次，问多少天后在哪个位置的概率。<br><img src="http://chenyue.u.qiniudn.com/img/programmers-math-road.png" alt="寻找人问题"></li>
+<li>有一个下面左边的房间，问能否用右边的席子铺满房间。<br><img src="http://chenyue.u.qiniudn.com/img/programmers-math-fill-brack-and-white.png" alt="铺席子问题"></li>
+</ul>
+<ul>
+<li><p>置换、排列和组合<br>这部分内容比较简单。</p>
+</li>
+<li><p>递归与分形<br>上次在<a href="http://learn.code.org" target="_blank">code.org</a>上面做那个测试，有看到一个用javascript写的代码，画出分形图，这次动手把他补全了,html5的canvas真的很方便，可以直接用javascript在上面画。</p>
+</li>
+</ul>
+<p><code>draw.html</code>文件</p>
+<figure class="highlight lang-html"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td><td class="code"><pre><span class="doctype">&lt;!DOCTYPE html&gt;</span>
+<span class="tag">&lt;<span class="title">html</span>&gt;</span>
+<span class="tag">&lt;<span class="title">head</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">title</span>&gt;</span>分形画图<span class="tag">&lt;/<span class="title">title</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">head</span>&gt;</span>
+<span class="tag">&lt;<span class="title">body</span>&gt;</span>
+<span class="tag">&lt;<span class="title">canvas</span> <span class="attribute">id</span>=<span class="value">"myCanvas"</span> <span class="attribute">width</span>=<span class="value">"400"</span> <span class="attribute">height</span>=<span class="value">"400"</span>&gt;</span><span class="tag">&lt;/<span class="title">canvas</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">body</span>&gt;</span>
+<span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"draw.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">html</span>&gt;</span>
+</pre></td></tr></table></figure>
+
+<p><code>draw.js</code>文件</p>
+<figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+</pre></td><td class="code"><pre><span class="keyword">var</span> posx = <span class="number">200</span>;
+<span class="keyword">var</span> posy = <span class="number">400</span>;
+<span class="keyword">var</span> angle = <span class="number">90</span>;
+
+<span class="keyword">var</span> isDraw;
+
+<span class="keyword">var</span> myCanvas = document.getElementById(<span class="string">"myCanvas"</span>);
+<span class="keyword">var</span> width = parseInt(myCanvas.getAttribute(<span class="string">"width"</span>));
+<span class="keyword">var</span> height = parseInt(myCanvas.getAttribute(<span class="string">"height"</span>));
+
+<span class="keyword">var</span> cxt = myCanvas.getContext(<span class="string">"2d"</span>);
+
+<span class="function"><span class="keyword">function</span> <span class="title">penDown</span><span class="params">()</span> {</span>
+  isDraw = <span class="literal">true</span>;
+}
+
+<span class="function"><span class="keyword">function</span> <span class="title">penUp</span><span class="params">()</span> {</span>
+  isDraw = <span class="literal">false</span>;
+}
+
+<span class="function"><span class="keyword">function</span> <span class="title">turnLeft</span><span class="params">(ang)</span> {</span>
+  angle = angle + ang;
+}
+
+<span class="function"><span class="keyword">function</span> <span class="title">turnRight</span><span class="params">(ang)</span> {</span>
+  angle = angle - ang;
+}
+
+<span class="function"><span class="keyword">function</span> <span class="title">moveForward</span><span class="params">(length)</span> {</span>
+  cxt.beginPath();
+  cxt.moveTo(posx,posy);
+  posx = posx - length * Math.cos(angle/<span class="number">180</span> * Math.PI);
+  posy = posy - length * Math.sin(angle/<span class="number">180</span> * Math.PI);
+  <span class="keyword">if</span> (isDraw) cxt.lineTo(posx,posy);
+  cxt.stroke();
+}
+
+<span class="function"><span class="keyword">function</span> <span class="title">moveBackward</span><span class="params">(length)</span> {</span>
+  cxt.beginPath();
+  cxt.moveTo(posx,posy);
+  posx = posx + length * Math.cos(angle/<span class="number">180</span> * Math.PI);
+  posy = posy + length * Math.sin(angle/<span class="number">180</span> * Math.PI);
+  <span class="keyword">if</span> (isDraw) cxt.lineTo(posx,posy);
+  cxt.stroke();
+}
+
+<span class="function"><span class="keyword">function</span> <span class="title">drawTree</span><span class="params">(depth, branches)</span> {</span>
+  <span class="keyword">if</span> (depth &gt; <span class="number">0</span>) {
+    penDown();
+    moveForward(<span class="number">7</span> * depth);
+    turnLeft(<span class="number">135</span>);
+    <span class="keyword">for</span> (<span class="keyword">var</span> count = <span class="number">0</span>; count &lt; branches; count++) {
+      turnRight(<span class="number">180</span> / branches);
+      drawTree(depth - <span class="number">1</span>, branches);
+    }
+    turnLeft(<span class="number">45</span>);
+    penUp();
+    moveBackward(<span class="number">7</span> * depth);
+  }
+}
+
+drawTree(<span class="number">9</span>, <span class="number">2</span>);
+</pre></td></tr></table></figure>
+
+<p>画出来图形如下，比较简单，不好看，下次再搞好点的。<br><img src="http://chenyue.u.qiniudn.com/img/programmers-math-draw-tree.png" alt="不好看的分形图"></p>
+<ul>
+<li><p>指数爆炸和二分</p>
+</li>
+<li><p>归纳法与反证法，不可解问题，可数集合与不可数集合<br>不可数集合的例子，所有整数数列的集合是不可数的，可用对角论证法证明</p>
+</li>
+</ul>
+
+      
+    </div>
+    <footer>
+      
+        
+  
+  <div class="categories">
+    <a href="/categories/Reading Note/">Reading Note</a>
+  </div>
+
+        
+  
+  <div class="tags">
+    <a href="/tags/Reading/">Reading</a>, <a href="/tags/programmer's math/">programmer's math</a>
+  </div>
+
+        
+  <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+    <a class="addthis_button_sinaweibo"></a>
+    <a class="addthis_button_qzone"></a>
+    <a class="addthis_button_baidu"></a>
+    <a class="addthis_button_douban"></a>
+    <a class="addthis_button_google_plusone_share"></a>
+    <a class="addthis_button_facebook"></a>
+    <a class="addthis_button_twitter"></a>
+    <a class="addthis_button_pinterest_share"></a>
+    <a class="addthis_button_evernote"></a>
+    <a class="addthis_button_compact"></a><a class="addthis_counter addthis_bubble_style"></a>
+  </div>
+  <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52ad6e3f2c8ed105"></script>
+
+
+
+
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+<section id="comment">
+  <h1 class="title">Comments</h1>
+
+  
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+  
+</section>
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="Search">
+    <input type="hidden" name="q" value="site:chenyue.me">
+  </form>
+</div>
+
+  <div class="widget tag">
+  <h3 class="title">About Me</h3>
+  <ul class="entry">
+      <li>York Chen</li>
+      <li>在深圳读研究生</li>
+      <li>爱运动爱折腾</li>
+  </ul>
+</div>
+
+
+  
+<div class="widget tag">
+  <h3 class="title">Categories</h3>
+  <ul class="entry">
+  
+    <li><a href="/categories/Reading Note/">Reading Note</a><small>1</small></li>
+  
+    <li><a href="/categories/Tools/">Tools</a><small>2</small></li>
+  
+    <li><a href="/categories/life/">life</a><small>1</small></li>
+  
+  </ul>
+</div>
+
+
+  
+<div class="widget tagcloud">
+  <h3 class="title">Tag Cloud</h3>
+  <div class="entry">
+    <a href="/tags/Hexo/" style="font-size: NaNpx;">Hexo</a><a href="/tags/Reading/" style="font-size: NaNpx;">Reading</a><a href="/tags/Shortcut Key/" style="font-size: NaNpx;">Shortcut Key</a><a href="/tags/Sublime/" style="font-size: NaNpx;">Sublime</a><a href="/tags/diary/" style="font-size: NaNpx;">diary</a><a href="/tags/git/" style="font-size: NaNpx;">git</a><a href="/tags/hexo/" style="font-size: NaNpx;">hexo</a><a href="/tags/mathjax/" style="font-size: NaNpx;">mathjax</a><a href="/tags/programmer's math/" style="font-size: NaNpx;">programmer's math</a><a href="/tags/think/" style="font-size: NaNpx;">think</a>
+  </div>
+</div>
+
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2013 York Chen
+  
+</div>
+<div class="clearfix"></div></footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+
+<script type="text/javascript">
+var disqus_shortname = 'chenyueblog';
+
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+</body>
+</html>
